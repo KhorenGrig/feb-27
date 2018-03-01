@@ -5,7 +5,7 @@ const findNumberGreaterThan10 = (arr) => {
   return newarray;
 }
 
-console.log(findNumberGreaterThan10([1,12,14,10,74,5,6,24,7,333]));
+console.log(findNumberGreaterThan10([1, 12, 14, 10, 74, 5, 6, 24, 7, 333]));
 
 
 const findNumberInArray = (arr, num) => {
@@ -14,17 +14,13 @@ const findNumberInArray = (arr, num) => {
   // If found, return true 
   // If not found, return false
   let bool;
-  for (let i = 0;i < arr.length;i++){
-    if (arr[i] === num) {
-      bool = true;
-    } else {
-      bool = false;
-    }
+  for (let i = 0; i < arr.length; i++) {
+    bool = (arr[i] === num) ? true : false;
   }
   return bool;
 }
 
-console.log( findNumberInArray([1,12,10,74,5,6,24],24));
+console.log(findNumberInArray([1, 12, 10, 74, 5, 6, 24], 24));
 
 const concatenateArrays = (arrA, arrB) => {
   // The program must take 2 arrays of numbers as arguments
@@ -45,11 +41,11 @@ const concatenateArrays = (arrA, arrB) => {
   }
   for (let j = 0; j < arrA.length; j++) {
     newarray.push(arrA[j]);
-  } 
+  }
   return newarray;
 }
 
-console.log(concatenateArrays([1,2,3,4,5],[6,7,8,9,10]));
+console.log(concatenateArrays([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]));
 
 const sumValues = (arr) => {
   // The program must take array of numbers as an argument
@@ -60,7 +56,6 @@ const sumValues = (arr) => {
   }
   return sum;
 }
-
 console.log(sumValues([1, 2, 3, 4, 5, 6]));
 
 const findMaxAndMin = (arr) => {
@@ -75,7 +70,7 @@ const findMaxAndMin = (arr) => {
 
 }
 
-console.log(findMaxAndMin([42, 18, 6, 506,402, 3, 9]));
+console.log(findMaxAndMin([42, 18, 6, 506, 402, 3, 9]));
 
 const reverseArray = (arr) => {
   // The program must take an array of numbers as an argument

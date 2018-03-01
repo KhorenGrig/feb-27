@@ -1,14 +1,18 @@
 const getLengthOfObject = (obj) => {
   // The program must take an object as an argument
   // and return the number of properties in it
-  let count= 0;
-  for(let y in obj){
+  let count = 0;
+  for (let y in obj) {
     count++;
   }
   return count;
 }
 
-console.log(getLengthOfObject({name:"John",last:"DOe",age:21}));
+console.log(getLengthOfObject({
+  name: "John",
+  last: "DOe",
+  age: 21
+}));
 
 const addCoolProperty = (obj) => {
   // The program must take an object as an argument
@@ -38,4 +42,4 @@ const arrayIntoObject = (arr) => {
 
 }
 
-console.log(arrayIntoObject([19,145,45,1,7,128,9,2,3,10]));
+console.log(arrayIntoObject([19, 145, 45, 1, 7, 128, 9, 2, 3, 10]));
